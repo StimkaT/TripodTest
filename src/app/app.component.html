@@ -1,2 +1,9 @@
-<app-nav></app-nav>
-<app-all-category></app-all-category>
+<div class="top-bar">
+    <app-nav [message]="'test project Tripod'"  (emitter)="events($event)"></app-nav>
+</div>
+<div class="body">
+    <app-speed-control [buttons]="[{text: 'X0,25',  speed: 0.25, selected: true}, {text: 'X0,5',  speed: 0.5, selected: false}, {text: 'X0,5',  speed: 0.5, selected: false}, {text: 'X0,5',  speed: 0.5, selected: false}, {text: 'X0,5',  speed: 0.5, selected: false}, {text: 'X0,5',  speed: 0.5, selected: false}]"></app-speed-control>
+</div>
+<div class="footer">
+    
+</div>

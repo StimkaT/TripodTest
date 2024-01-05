@@ -1,39 +1,13 @@
-<mat-toolbar color = "primary">
-  <span class="marg-logo"> <mat-icon> agriculture </mat-icon>  HardRent </span>
-  <button class="marg-tool">
-    <span mat-icon-button >Главная</span>
+<mat-toolbar color="primary">
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>menu</mat-icon>
   </button>
-  <button class="marg-tool">
-    <span>Арендодатели</span>
-  </button>
-  <button class="marg-tool">
-    <span>Услуги</span>
-  </button>
-  <button class="marg-tool">
-    <span>Калькулятор</span>
-  </button>
-  <button class="marg-tool">
-    <span>Новости</span>
-  </button>
-  <button class="marg-tool">
-    <span>Условия сотрудничества</span>
-  </button>
+  <span>{{ message }}</span>
   <span class="example-spacer"></span>
-  <!-- <app-search></app-search> -->
-  <button mat-icon-button>
-    <mat-icon>search</mat-icon>
+  <button mat-icon-button class="example-icon favorite-icon">
+    <mat-icon>settings</mat-icon>
   </button>
-  <button mat-icon-button>
-    <mat-icon> bookmark </mat-icon> 
-  </button>
-  <button mat-icon-button >
-    <mat-icon> mail </mat-icon> 
-  </button>
-
-  <button [matMenuTriggerFor]="account"  mat-icon-button class="example-icon">
-    <mat-icon>account_circle</mat-icon>
-  </button>
-
+  <app-account-menu></app-account-menu>
   <mat-menu #menu="matMenu">
     <button mat-menu-item>
       <mat-icon>dialpad</mat-icon>
@@ -48,11 +22,4 @@
       <span>Disable alerts</span>
     </button>
   </mat-menu>
-
-  <mat-menu #account="matMenu">
-    <button mat-menu-item (click)="buttonClicked('Sign out')">
-      <mat-icon>logout</mat-icon>
-      <span>Sign out</span>
-    </button>
-  </mat-menu>
-  </mat-toolbar>
+</mat-toolbar>

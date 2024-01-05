@@ -1,11 +1,10 @@
 import {componentWrapperDecorator, Meta, moduleMetadata, StoryObj} from '@storybook/angular';
-import {AllCategoryComponent} from './all-category.component';
+import {ControlButtonsComponent} from './control-buttons.component';
 
 
-
-const meta: Meta<AllCategoryComponent> = {
-  title: 'UI Components/AllCategoryComponent',
-  component: AllCategoryComponent,
+const meta: Meta<ControlButtonsComponent> = {
+  title: 'UI Components/ControlButtonsComponent',
+  component: ControlButtonsComponent,
   decorators: [
     moduleMetadata({
       imports: [],
@@ -14,7 +13,7 @@ const meta: Meta<AllCategoryComponent> = {
       (story) => `<div>${story}</div>`
     ),
   ],
-  render: (args: AllCategoryComponent) => ({
+  render: (args: ControlButtonsComponent) => ({
     props: {
       ...args,
     },
@@ -22,9 +21,9 @@ const meta: Meta<AllCategoryComponent> = {
 };
 
 export default meta;
-type Story = StoryObj<AllCategoryComponent>;
+type Story = StoryObj<ControlButtonsComponent>;
 
 export const Primary: Story = {
   args: {
-  },
+    },
 };

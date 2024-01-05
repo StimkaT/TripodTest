@@ -1,0 +1,19 @@
+<mat-card class="cards">
+    <mat-card-content>
+      <h3>Log In</h3>
+      <hr>
+      @for (user of users; track user) {
+      <div>
+        <button
+          (click)="buttonClicked(user)"
+          mat-raised-button
+          color="primary"
+          class="example-icon">
+          <mat-icon>account_circle</mat-icon>
+          <span>{{user.name}}</span>
+        </button>
+      </div>
+    }
+    </mat-card-content>
+  </mat-card>
+  

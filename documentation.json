@@ -2,32 +2,65 @@
     "pipes": [],
     "interfaces": [
         {
-            "name": "ExampleFlatNode",
-            "id": "interface-ExampleFlatNode-5a2126d76f94255cf97029bfe03684cf1aeb3678c7f7e3c94074e53196dec615b1b8aad2c31ac94934687c157e6750e1e89935630d8124e5b836ddd4b63bf6c2",
-            "file": "src/app/data/EquipmentСatalog.ts",
+            "name": "ConfigPartialState",
+            "id": "interface-ConfigPartialState-70ad6da4049779a71c8fa745734940dad870db4a16533c06e4eee536ca71a03d0d22d7b23840a4189caa3ead616cf7bc8f7ba26c3ab2dcc11439462e5dee542a",
+            "file": "src/app/datal/config.reducer.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface FoodNode {\r\n    name: string;\r\n    children?: FoodNode[];\r\n  }\r\n  \r\nexport const TREE_DATA: FoodNode[] = [\r\n    {\r\n      name: 'Экскаваторы',\r\n      children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    },\r\n    {\r\n        name: 'Бульдозеры'\r\n      },\r\n      {\r\n        name: 'Буровое оборудование',\r\n        children: [{name: 'Установки вертикального бурения'}, {name: 'Установки горизонтального бурения'}, {name: 'Бензорубы'}],\r\n      },\r\n      {\r\n        name: 'Погрузчики строительные',\r\n        children: [{name: 'Погрузчики фронтальные'}, {name: 'Погрузчики телескопические'}, {name: 'Мини-погрузчики'}, {name: 'Мини-погрузчики гусенечные'}],\r\n      },\r\n      {\r\n        name: 'Краны строительные',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Подъемники строительные',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Разная спецтехника',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Автомобили, грузоперевозки',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n  ];\r\n  \r\n  /** Flat node with expandable and level information */\r\n  export  interface ExampleFlatNode {\r\n    expandable: boolean;\r\n    name: string;\r\n    level: number;\r\n  }",
+            "sourceCode": "export const CONFIG_FEATURE_KEY = 'config';\r\n\r\nexport interface IUser {id: number, name: string, role: string}\r\nexport interface ConfigState {\r\n  userList: IUser[];\r\n}\r\n\r\nexport interface ConfigPartialState {\r\n  readonly [CONFIG_FEATURE_KEY]: ConfigState;\r\n}\r\n\r\nexport const initialState: ConfigState = {\r\n  userList:[\r\n    {id: 1, name: 'User1', role: 'admin'},\r\n    {id: 2, name: 'User2', role: 'admin'},\r\n  ],\r\n};\r\n\r\nexport interface IUsb {\r\n  name: string;\r\n}\r\n\r\n",
             "properties": [
                 {
-                    "name": "expandable",
+                    "name": "CONFIG_FEATURE_KEY",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "boolean",
+                    "type": "ConfigState",
                     "optional": false,
                     "description": "",
-                    "line": 122
-                },
+                    "line": 9,
+                    "modifierKind": [
+                        148
+                    ]
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "ConfigState",
+            "id": "interface-ConfigState-70ad6da4049779a71c8fa745734940dad870db4a16533c06e4eee536ca71a03d0d22d7b23840a4189caa3ead616cf7bc8f7ba26c3ab2dcc11439462e5dee542a",
+            "file": "src/app/datal/config.reducer.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export const CONFIG_FEATURE_KEY = 'config';\r\n\r\nexport interface IUser {id: number, name: string, role: string}\r\nexport interface ConfigState {\r\n  userList: IUser[];\r\n}\r\n\r\nexport interface ConfigPartialState {\r\n  readonly [CONFIG_FEATURE_KEY]: ConfigState;\r\n}\r\n\r\nexport const initialState: ConfigState = {\r\n  userList:[\r\n    {id: 1, name: 'User1', role: 'admin'},\r\n    {id: 2, name: 'User2', role: 'admin'},\r\n  ],\r\n};\r\n\r\nexport interface IUsb {\r\n  name: string;\r\n}\r\n\r\n",
+            "properties": [
                 {
-                    "name": "level",
+                    "name": "userList",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "number",
+                    "type": "IUser[]",
                     "optional": false,
                     "description": "",
-                    "line": 124
-                },
+                    "line": 5
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "IUsb",
+            "id": "interface-IUsb-70ad6da4049779a71c8fa745734940dad870db4a16533c06e4eee536ca71a03d0d22d7b23840a4189caa3ead616cf7bc8f7ba26c3ab2dcc11439462e5dee542a",
+            "file": "src/app/datal/config.reducer.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "export const CONFIG_FEATURE_KEY = 'config';\r\n\r\nexport interface IUser {id: number, name: string, role: string}\r\nexport interface ConfigState {\r\n  userList: IUser[];\r\n}\r\n\r\nexport interface ConfigPartialState {\r\n  readonly [CONFIG_FEATURE_KEY]: ConfigState;\r\n}\r\n\r\nexport const initialState: ConfigState = {\r\n  userList:[\r\n    {id: 1, name: 'User1', role: 'admin'},\r\n    {id: 2, name: 'User2', role: 'admin'},\r\n  ],\r\n};\r\n\r\nexport interface IUsb {\r\n  name: string;\r\n}\r\n\r\n",
+            "properties": [
                 {
                     "name": "name",
                     "deprecated": false,
@@ -35,31 +68,29 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 123
+                    "line": 20
                 }
             ],
             "indexSignatures": [],
             "kind": 171,
-            "description": "<p>Flat node with expandable and level information</p>\n",
-            "rawdescription": "\nFlat node with expandable and level information",
             "methods": [],
             "extends": []
         },
         {
-            "name": "FoodNode",
-            "id": "interface-FoodNode-5a2126d76f94255cf97029bfe03684cf1aeb3678c7f7e3c94074e53196dec615b1b8aad2c31ac94934687c157e6750e1e89935630d8124e5b836ddd4b63bf6c2",
-            "file": "src/app/data/EquipmentСatalog.ts",
+            "name": "IUser",
+            "id": "interface-IUser-70ad6da4049779a71c8fa745734940dad870db4a16533c06e4eee536ca71a03d0d22d7b23840a4189caa3ead616cf7bc8f7ba26c3ab2dcc11439462e5dee542a",
+            "file": "src/app/datal/config.reducer.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface FoodNode {\r\n    name: string;\r\n    children?: FoodNode[];\r\n  }\r\n  \r\nexport const TREE_DATA: FoodNode[] = [\r\n    {\r\n      name: 'Экскаваторы',\r\n      children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    },\r\n    {\r\n        name: 'Бульдозеры'\r\n      },\r\n      {\r\n        name: 'Буровое оборудование',\r\n        children: [{name: 'Установки вертикального бурения'}, {name: 'Установки горизонтального бурения'}, {name: 'Бензорубы'}],\r\n      },\r\n      {\r\n        name: 'Погрузчики строительные',\r\n        children: [{name: 'Погрузчики фронтальные'}, {name: 'Погрузчики телескопические'}, {name: 'Мини-погрузчики'}, {name: 'Мини-погрузчики гусенечные'}],\r\n      },\r\n      {\r\n        name: 'Краны строительные',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Подъемники строительные',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Разная спецтехника',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Автомобили, грузоперевозки',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n  ];\r\n  \r\n  /** Flat node with expandable and level information */\r\n  export  interface ExampleFlatNode {\r\n    expandable: boolean;\r\n    name: string;\r\n    level: number;\r\n  }",
+            "sourceCode": "export const CONFIG_FEATURE_KEY = 'config';\r\n\r\nexport interface IUser {id: number, name: string, role: string}\r\nexport interface ConfigState {\r\n  userList: IUser[];\r\n}\r\n\r\nexport interface ConfigPartialState {\r\n  readonly [CONFIG_FEATURE_KEY]: ConfigState;\r\n}\r\n\r\nexport const initialState: ConfigState = {\r\n  userList:[\r\n    {id: 1, name: 'User1', role: 'admin'},\r\n    {id: 2, name: 'User2', role: 'admin'},\r\n  ],\r\n};\r\n\r\nexport interface IUsb {\r\n  name: string;\r\n}\r\n\r\n",
             "properties": [
                 {
-                    "name": "children",
+                    "name": "id",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "FoodNode[]",
-                    "optional": true,
+                    "type": "number",
+                    "optional": false,
                     "description": "",
                     "line": 3
                 },
@@ -70,7 +101,58 @@
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 2
+                    "line": 3
+                },
+                {
+                    "name": "role",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 3
+                }
+            ],
+            "indexSignatures": [],
+            "kind": 171,
+            "methods": [],
+            "extends": []
+        },
+        {
+            "name": "SpeedControlComponentButton",
+            "id": "interface-SpeedControlComponentButton-dcb4e346706082e03b73af9d213859e37d8cdf1b52e3116c511a35ab37923e0978da5de611d0f868633bc8a3d4874b54e63690f78a4b07cee01507b4db70046d",
+            "file": "src/app/speed-control/speed-control.component.ts",
+            "deprecated": false,
+            "deprecationMessage": "",
+            "type": "interface",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { MatIconModule } from '@angular/material/icon';\nimport { ControlButtonsComponent } from '../control-buttons/control-buttons.component';\nimport { MatButtonModule } from '@angular/material/button';\nimport {MatButtonToggleModule} from '@angular/material/button-toggle';\n\nexport interface SpeedControlComponentButton {\n  speed: number;\n  text: string;\n  selected?: boolean;\n}\n\n@Component({\n  selector: 'app-speed-control',\n  standalone: true,\n  imports: [MatIconModule, ControlButtonsComponent, MatButtonModule, MatButtonToggleModule],\n  templateUrl: './speed-control.component.html',\n  styleUrl: './speed-control.component.scss'\n})\nexport class SpeedControlComponent {\n  @Input() buttons: SpeedControlComponentButton[] = [];\n\n  @Output() emitter = new EventEmitter() \n  \n  buttonClick(data: number) {\n    const message = {\n      event: 'SpeedControlComponent:buttonClick', \n      data,\n    };\n    this.emitter.emit(message);\n  }\n\n  \n}\n",
+            "properties": [
+                {
+                    "name": "selected",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": true,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "speed",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "number",
+                    "optional": false,
+                    "description": "",
+                    "line": 8
+                },
+                {
+                    "name": "text",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
                 }
             ],
             "indexSignatures": [],
@@ -80,12 +162,12 @@
         },
         {
             "name": "User",
-            "id": "interface-User-d4821beac0e4a852e513391b7470981c4353fdd95a18628bb68136c8695b489ee15b926e2e5031bc26cf30e1508e0a362c3ee13a06734702b4d15af140e485d5",
+            "id": "interface-User-23c11020a2831beb3fa02ee911a75b64009c31bb46f73a01145c2560cb13b7f7e641105b678bd8fb01a5a199117001f3da4a78351d29d85d213ed7b82982091f",
             "file": "src/stories/user.ts",
             "deprecated": false,
             "deprecationMessage": "",
             "type": "interface",
-            "sourceCode": "export interface User {\n  name: string;\n}\n",
+            "sourceCode": "export interface User {\r\n  name: string;\r\n}\r\n",
             "properties": [
                 {
                     "name": "name",
@@ -110,80 +192,64 @@
     "directives": [],
     "components": [
         {
-            "name": "AllCategoryComponent",
-            "id": "component-AllCategoryComponent-4f72880498e54e71dd491457734af295aac9183f8eac7183475d5763cc8e81b40fb4d131cde4221a93ddb492b4b1f0d11ac1680fdda8200bc321c4021cc630af",
-            "file": "src/app/all-category/all-category.component.ts",
+            "name": "AccountMenuComponent",
+            "id": "component-AccountMenuComponent-0d81a0231d395d63c3e912cd627b25a58f513956ba785d4138479955e842359dc945b9e83453c3d6ead0beca0586c78d3a433007af1bb63fdd00daa2bfcfa527",
+            "file": "src/app/account-menu/account-menu.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "app-all-category",
+            "selector": "app-account-menu",
             "styleUrls": [],
             "styles": [],
             "templateUrl": [
-                "./all-category.component.html"
+                "./account-menu.component.html"
             ],
             "viewProviders": [],
             "hostDirectives": [],
             "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [
+            "outputsClass": [
                 {
-                    "name": "_transformer",
-                    "defaultValue": "() => {...}",
+                    "name": "emitter",
+                    "defaultValue": "new EventEmitter()",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 22,
-                    "modifierKind": [
-                        123
-                    ]
-                },
-                {
-                    "name": "dataSource",
-                    "defaultValue": "new MatTreeFlatDataSource(this.treeControl, this.treeFlattener)",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 42
-                },
-                {
-                    "name": "hasChild",
-                    "defaultValue": "() => {...}",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 48
-                },
-                {
-                    "name": "treeControl",
-                    "defaultValue": "new FlatTreeControl<ExampleFlatNode>(\n    node => node.level,\n    node => node.expandable,\n  )",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 30
-                },
-                {
-                    "name": "treeFlattener",
-                    "defaultValue": "new MatTreeFlattener(\n    this._transformer,\n    node => node.level,\n    node => node.expandable,\n    node => node.children,\n  )",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 35
+                    "line": 16,
+                    "type": "EventEmitter"
                 }
             ],
-            "methodsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "buttonClicked",
+                    "args": [
+                        {
+                            "name": "note",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 18,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "note",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -191,44 +257,40 @@
             "standalone": true,
             "imports": [
                 {
-                    "name": "CommonModule",
+                    "name": "MatMenuModule",
                     "type": "module"
                 },
                 {
-                    "name": "MatTreeModule",
+                    "name": "UserListComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "MatIconModule",
+                    "type": "module"
+                },
+                {
+                    "name": "MatFormFieldModule",
                     "type": "module"
                 },
                 {
                     "name": "MatButtonModule",
-                    "type": "module"
-                },
-                {
-                    "name": "MatIconModule",
                     "type": "module"
                 }
             ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatIconModule } from '@angular/material/icon';\nimport {MatTreeFlatDataSource, MatTreeFlattener, MatTreeModule} from '@angular/material/tree';\nimport {FlatTreeControl} from '@angular/cdk/tree';\nimport {TREE_DATA, ExampleFlatNode, FoodNode} from '../data/EquipmentСatalog'\n\n\n\n\n@Component({\n  selector: 'app-all-category',\n  standalone: true,\n  imports: [CommonModule, MatTreeModule, MatButtonModule, MatIconModule],\n  templateUrl: './all-category.component.html',\n  styleUrl: './all-category.component.scss'\n  \n})\n\nexport class AllCategoryComponent {\n  private _transformer = (node: FoodNode, level: number) => {\n    return {\n      expandable: !!node.children && node.children.length > 0,\n      name: node.name,\n      level: level,\n    };\n  };\n\n  treeControl = new FlatTreeControl<ExampleFlatNode>(\n    node => node.level,\n    node => node.expandable,\n  );\n\n  treeFlattener = new MatTreeFlattener(\n    this._transformer,\n    node => node.level,\n    node => node.expandable,\n    node => node.children,\n  );\n\n  dataSource = new MatTreeFlatDataSource(this.treeControl, this.treeFlattener);\n\n  constructor() {\n    this.dataSource.data = TREE_DATA;\n  }\n\n  hasChild = (_: number, node: ExampleFlatNode) => node.expandable;\n}\n\n",
-            "styleUrl": "./all-category.component.scss",
+            "sourceCode": "import { Component, EventEmitter, Output } from '@angular/core';\nimport { UserListComponent } from '../user-list/user-list.component';\nimport { MatMenuModule } from '@angular/material/menu';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatButtonModule } from '@angular/material/button';\n\n@Component({\n  selector: 'app-account-menu',\n  standalone: true,\n  imports: [MatMenuModule, UserListComponent, MatIconModule, MatFormFieldModule, MatButtonModule],\n  templateUrl: './account-menu.component.html',\n  styleUrl: './account-menu.component.scss'\n})\nexport class AccountMenuComponent {\n  @Output() emitter = new EventEmitter();\n\n  buttonClicked(note: string) {\n    this.emitter.emit({\n      event: 'NavPanelComponent:BUTTON_CLICKED',\n      data: {note},\n    });\n  }\n}\n",
+            "styleUrl": "./account-menu.component.scss",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [],
-                "line": 42
-            },
             "extends": [],
-            "templateData": "<mat-tree [dataSource]=\"dataSource\" [treeControl]=\"treeControl\" >\n  <!-- This is the tree node template for leaf nodes -->\n  <mat-tree-node *matTreeNodeDef=\"let node\" matTreeNodePadding>\n    <!-- use a disabled button to provide padding for tree leaf -->\n    <button mat-icon-button disabled></button>\n    {{node.name}}\n  </mat-tree-node>\n  <!-- This is the tree node template for expandable nodes -->\n  <mat-tree-node *matTreeNodeDef=\"let node;when: hasChild\" matTreeNodePadding>\n    <button mat-icon-button matTreeNodeToggle\n            [attr.aria-label]=\"'Toggle ' + node.name\">\n      <mat-icon class=\"mat-icon-rtl-mirror\">\n        {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}\n      </mat-icon>\n    </button>\n    {{node.name}}\n  </mat-tree-node>\n</mat-tree>"
+            "templateData": "<button [matMenuTriggerFor]=\"account\"  mat-icon-button class=\"example-icon\">\n    <mat-icon>account_circle</mat-icon>\n</button>\n<mat-menu #account=\"matMenu\">\n    <app-user-list></app-user-list>\n    <button mat-menu-item (click)=\"buttonClicked('Sign out')\">\n    <mat-icon>logout</mat-icon>\n    <span>Sign out</span>\n    </button>\n</mat-menu>\n\n"
         },
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-a93d614e394c5929cd31638a58247eda9b5df8cfc13490d88481f340975c91ea2f91c4aa608024b801dd16ce187982cf9e4113f28fe7afff98ce9f1091694dd5",
+            "id": "component-AppComponent-c8a14902f7bc013ac4743488d9ecae69790cc8d54582b098f7e16a4742ec57a5d5ca40aa9f183fe66696676fcadd916d71140a73bf25683c0c200840f9b6e7e7",
             "file": "src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -248,26 +310,51 @@
             "propertiesClass": [
                 {
                     "name": "title",
-                    "defaultValue": "'EquipmentRental'",
+                    "defaultValue": "'TripodV1'",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
                     "optional": false,
                     "description": "",
-                    "line": 18
+                    "line": 20
                 }
             ],
-            "methodsClass": [],
+            "methodsClass": [
+                {
+                    "name": "events",
+                    "args": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 22,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "standalone": true,
             "imports": [
-                {
-                    "name": "CommonModule",
-                    "type": "module"
-                },
                 {
                     "name": "RouterOutlet"
                 },
@@ -276,32 +363,40 @@
                     "type": "component"
                 },
                 {
-                    "name": "AllCategoryComponent",
-                    "type": "component"
-                },
-                {
                     "name": "MatTreeModule",
                     "type": "module"
                 },
                 {
-                    "name": "SearchComponent",
+                    "name": "LigthCopyComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "SpeedControlComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "FooterComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "UsbListComponent",
                     "type": "component"
                 }
             ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { RouterOutlet } from '@angular/router';\nimport { NavComponent } from './nav/nav.component';\nimport { AllCategoryComponent } from './all-category/all-category.component';\nimport {MatTreeModule} from '@angular/material/tree';\nimport { SearchComponent } from './search/search.component';\n// import {TREE_DATA, ExampleFlatNode, FoodNode} from '../data/technick'\n\n@Component({\n  selector: 'app-root',\n  standalone: true,\n  imports: [CommonModule, RouterOutlet, NavComponent, AllCategoryComponent, MatTreeModule, SearchComponent],\n  templateUrl: './app.component.html',\n  styleUrl: './app.component.scss'\n})\nexport class AppComponent {\n  title = 'EquipmentRental';\n}\n\n\n\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { RouterOutlet } from '@angular/router';\r\nimport { NavComponent } from './nav/nav.component';\r\nimport { MatTreeModule } from '@angular/material/tree';\r\nimport { LigthCopyComponent } from './light/ligth.component';\r\n// import { ControlButtonsComponent } from './control-buttons/control-buttons.component';\r\nimport { SpeedControlComponent } from './speed-control/speed-control.component';\r\nimport { FooterComponent } from './footer/footer.component';\r\nimport { UsbListComponent } from './usb-list/usb-list.component';\r\n// import {TREE_DATA, ExampleFlatNode, FoodNode} from '../data/technick'\r\n\r\n@Component({\r\n  selector: 'app-root',\r\n  standalone: true,\r\n  imports: [RouterOutlet, NavComponent, MatTreeModule, LigthCopyComponent, SpeedControlComponent, FooterComponent, UsbListComponent],\r\n  templateUrl: './app.component.html',\r\n  styleUrl: './app.component.scss'\r\n})\r\nexport class AppComponent {\r\n  title = 'TripodV1';\r\n\r\n  events($event:any) {\r\n    if ($event.event === 'LigthCopyComponent:buttonClick' && $event.data === 'switch') {\r\n      console.log('switch', $event);\r\n    } else if ($event.event === 'LigthCopyComponent:buttonClick' && $event.data === 'blink') {\r\n      console.log('blink', $event);\r\n    }\r\n  }\r\n}\r\n\r\n\r\n\r\n",
             "styleUrl": "./app.component.scss",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<app-nav></app-nav>\r\n<app-all-category></app-all-category>"
+            "templateData": "<div class=\"top-bar\">\r\n    <app-nav [message]=\"'test project Tripod'\"  (emitter)=\"events($event)\"></app-nav>\r\n</div>\r\n<div class=\"body\">\r\n    <app-speed-control [buttons]=\"[{text: 'X0,25',  speed: 0.25, selected: true}, {text: 'X0,5',  speed: 0.5, selected: false}, {text: 'X0,5',  speed: 0.5, selected: false}, {text: 'X0,5',  speed: 0.5, selected: false}, {text: 'X0,5',  speed: 0.5, selected: false}, {text: 'X0,5',  speed: 0.5, selected: false}]\"></app-speed-control>\r\n</div>\r\n<div class=\"footer\">\r\n    \r\n</div>"
         },
         {
             "name": "ButtonComponent",
-            "id": "component-ButtonComponent-86e2311c54fbca7431c12e070d0fd5b0ebe343eec0553a392f182ba0e04a8f86613233d26ee47718fd0e7a65078f580c76a1fcc928ce55de81193d6618025bc4",
+            "id": "component-ButtonComponent-c3bd323da00016e22e16a3a7d43440094eeceddea5e6076a399bcaba62f8e742efe65e543735e36f9ea1bed026ab8e3c8fb60482667ae55ec324f8adfe79b9f7",
             "file": "src/stories/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -335,15 +430,15 @@
                     "deprecationMessage": "",
                     "jsdoctags": [
                         {
-                            "pos": 798,
-                            "end": 811,
+                            "pos": 837,
+                            "end": 851,
                             "flags": 16842752,
                             "modifierFlagsCache": 0,
                             "transformFlags": 0,
                             "kind": 334,
                             "tagName": {
-                                "pos": 799,
-                                "end": 807,
+                                "pos": 838,
+                                "end": 846,
                                 "flags": 16842752,
                                 "modifierFlagsCache": 0,
                                 "transformFlags": 0,
@@ -410,11 +505,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  standalone: true,\n  imports: [CommonModule],\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\r\nimport { Component, Input, Output, EventEmitter } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'storybook-button',\r\n  standalone: true,\r\n  imports: [CommonModule],\r\n  template: ` <button\r\n    type=\"button\"\r\n    (click)=\"onClick.emit($event)\"\r\n    [ngClass]=\"classes\"\r\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\r\n  >\r\n    {{ label }}\r\n  </button>`,\r\n  styleUrls: ['./button.css'],\r\n})\r\nexport class ButtonComponent {\r\n  /**\r\n   * Is this the principal call to action on the page?\r\n   */\r\n  @Input()\r\n  primary = false;\r\n\r\n  /**\r\n   * What background color to use\r\n   */\r\n  @Input()\r\n  backgroundColor?: string;\r\n\r\n  /**\r\n   * How large should the button be?\r\n   */\r\n  @Input()\r\n  size: 'small' | 'medium' | 'large' = 'medium';\r\n\r\n  /**\r\n   * Button contents\r\n   *\r\n   * @required\r\n   */\r\n  @Input()\r\n  label = 'Button';\r\n\r\n  /**\r\n   * Optional click handler\r\n   */\r\n  @Output()\r\n  onClick = new EventEmitter<Event>();\r\n\r\n  public get classes(): string[] {\r\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\r\n\r\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "data": ".storybook-button {\r\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  font-weight: 700;\r\n  border: 0;\r\n  border-radius: 3em;\r\n  cursor: pointer;\r\n  display: inline-block;\r\n  line-height: 1;\r\n}\r\n.storybook-button--primary {\r\n  color: white;\r\n  background-color: #1ea7fd;\r\n}\r\n.storybook-button--secondary {\r\n  color: #333;\r\n  background-color: transparent;\r\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\r\n}\r\n.storybook-button--small {\r\n  font-size: 12px;\r\n  padding: 10px 16px;\r\n}\r\n.storybook-button--medium {\r\n  font-size: 14px;\r\n  padding: 11px 20px;\r\n}\r\n.storybook-button--large {\r\n  font-size: 16px;\r\n  padding: 12px 24px;\r\n}\r\n",
                     "styleUrl": "./button.css"
                 }
             ],
@@ -433,26 +528,64 @@
             }
         },
         {
-            "name": "CategoryComponent",
-            "id": "component-CategoryComponent-93fb9a4527db67f9e04d3e3fab74910a57425da6c467b98ece711b53f06956c917601342406a77d4c7aefe85e91b68e3a9c3e09eb54d7f1c3b4f79a467d29e9d",
-            "file": "src/app/category/category.component.ts",
+            "name": "ControlButtonsComponent",
+            "id": "component-ControlButtonsComponent-6031be01fd57d1a12b200d4b8eeccf52e4e945bffee0b62cb3501971c6fbcdcd0dd68d9dd6cbc2746a4f74edf9ed6039c41f64f46e942201c1742208b8ec1abe",
+            "file": "src/app/control-buttons/control-buttons.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "app-category",
+            "selector": "app-control-buttons",
             "styleUrls": [],
             "styles": [],
             "templateUrl": [
-                "./category.component.html"
+                "./control-buttons.component.html"
             ],
             "viewProviders": [],
             "hostDirectives": [],
             "inputsClass": [],
-            "outputsClass": [],
+            "outputsClass": [
+                {
+                    "name": "emitter",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "EventEmitter"
+                }
+            ],
             "propertiesClass": [],
-            "methodsClass": [],
+            "methodsClass": [
+                {
+                    "name": "buttonClick",
+                    "args": [
+                        {
+                            "name": "data",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 15,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "data",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -460,31 +593,31 @@
             "standalone": true,
             "imports": [
                 {
-                    "name": "MatExpansionModule",
+                    "name": "MatIconModule",
                     "type": "module"
                 }
             ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport {MatExpansionModule} from '@angular/material/expansion';\n\n\n\n@Component({\n  selector: 'app-category',\n  standalone: true,\n  imports: [MatExpansionModule],\n  templateUrl: './category.component.html',\n  styleUrl: './category.component.scss'\n})\nexport class CategoryComponent {\n\n}\n",
-            "styleUrl": "./category.component.scss",
+            "sourceCode": "import { Component, Output, EventEmitter } from '@angular/core';\nimport { MatIconModule } from '@angular/material/icon';\n\n\n@Component({\n  selector: 'app-control-buttons',\n  standalone: true,\n  imports: [MatIconModule],\n  templateUrl: './control-buttons.component.html',\n  styleUrl: './control-buttons.component.scss'\n})\nexport class ControlButtonsComponent {\n  @Output() emitter = new EventEmitter() \n\n  buttonClick(data: string) {\n    const message = {\n      event: 'ControlButtonsComponent:buttonClick', \n      data,\n    };\n    this.emitter.emit(message);\n  }\n}\n",
+            "styleUrl": "./control-buttons.component.scss",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<mat-accordion>\n    <mat-expansion-panel hideToggle>\n        <mat-expansion-panel-header>\n            <mat-panel-title>\n                Пример 1 категории техники\n            </mat-panel-title>\n        </mat-expansion-panel-header>\n    <div>\n        <a href=\"/\">Вид 1</a>\n    </div>\n        <a href=\"/\">Вид 2</a>\n    </mat-expansion-panel>\n</mat-accordion>"
+            "templateData": "<div>\n    <button mat-menu-item (click)=\"buttonClick('up')\" >\n        <mat-icon>expand_less</mat-icon>\n    </button>\n</div>\n<div>\n    <button mat-menu-item (click)=\"buttonClick('left')\">\n        <mat-icon>navigate_before</mat-icon>\n    </button>\n    <button mat-menu-item (click)=\"buttonClick('right')\">\n        <mat-icon>navigate_next</mat-icon>\n    </button>\n</div>\n<div>\n    <button mat-menu-item (click)=\"buttonClick('down')\">\n        <mat-icon>expand_more</mat-icon>\n    </button>\n</div>"
         },
         {
             "name": "FooterComponent",
-            "id": "component-FooterComponent-8a60337cd99521c7582c2a72c84db07777cc4769e848fd04b47a2e0271da9c95164593ad36dab9db1ee343bdc5c1e938ce8fbb3c6d2d2aa468edd1d3aa2edf10",
+            "id": "component-FooterComponent-c587ef9b258dd159d0a9d30714389d0e1eeb62eb849eb135fad9632b24d4191f3622b010a012ada1e570a3fd854789618a3e20f823ff4a5a1b7ef6770bc968b8",
             "file": "src/app/footer/footer.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "app-footer",
+            "selector": "footer",
             "styleUrls": [],
             "styles": [],
             "templateUrl": [
@@ -505,17 +638,17 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-footer',\n  standalone: true,\n  imports: [],\n  templateUrl: './footer.component.html',\n  styleUrl: './footer.component.scss'\n})\nexport class FooterComponent {\n\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'footer',\r\n  standalone: true,\r\n  imports: [],\r\n  templateUrl: './footer.component.html',\r\n  styleUrl: './footer.component.scss'\r\n})\r\nexport class FooterComponent {\r\n\r\n}\r\n",
             "styleUrl": "./footer.component.scss",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<p>footer works!</p>\n"
+            "templateData": "<p>footer works!</p>\r\n"
         },
         {
             "name": "HeaderComponent",
-            "id": "component-HeaderComponent-cad94b233ec8e80ceb541e7972c5f9737e08237b4e137112f3987ca48ee0cce5c0d57798d41daa5d4d24d6bdbb2df1606ab68cca2aa0a1785e38f99f3cac0729",
+            "id": "component-HeaderComponent-07f894be6f38e12f30e1e7e5d9e999c27c78ce2f0be03c15c8c5f39207229e147892a2fd1fdb54e935c4f04f03c2162e39a22c28cdc64e027ea15824ddf0f3c9",
             "file": "src/stories/header.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -588,11 +721,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { ButtonComponent } from './button.component';\nimport type { User } from './user';\n\n@Component({\n  selector: 'storybook-header',\n  standalone: true,\n  imports: [CommonModule, ButtonComponent],\n  template: `<header>\n    <div class=\"storybook-header\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            [primary]=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\n\r\nimport { ButtonComponent } from './button.component';\r\nimport type { User } from './user';\r\n\r\n@Component({\r\n  selector: 'storybook-header',\r\n  standalone: true,\r\n  imports: [CommonModule, ButtonComponent],\r\n  template: `<header>\r\n    <div class=\"storybook-header\">\r\n      <div>\r\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <g fill=\"none\" fillRule=\"evenodd\">\r\n            <path\r\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\r\n              fill=\"#FFF\"\r\n            />\r\n            <path\r\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\r\n              fill=\"#555AB9\"\r\n            />\r\n            <path\r\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\r\n              fill=\"#91BAF8\"\r\n            />\r\n          </g>\r\n        </svg>\r\n        <h1>Acme</h1>\r\n      </div>\r\n      <div>\r\n        <div *ngIf=\"user\">\r\n          <span class=\"welcome\">\r\n            Welcome, <b>{{ user.name }}</b\r\n            >!\r\n          </span>\r\n          <storybook-button\r\n            *ngIf=\"user\"\r\n            size=\"small\"\r\n            (onClick)=\"onLogout.emit($event)\"\r\n            label=\"Log out\"\r\n          ></storybook-button>\r\n        </div>\r\n        <div *ngIf=\"!user\">\r\n          <storybook-button\r\n            *ngIf=\"!user\"\r\n            size=\"small\"\r\n            class=\"margin-left\"\r\n            (onClick)=\"onLogin.emit($event)\"\r\n            label=\"Log in\"\r\n          ></storybook-button>\r\n          <storybook-button\r\n            *ngIf=\"!user\"\r\n            size=\"small\"\r\n            [primary]=\"true\"\r\n            class=\"margin-left\"\r\n            (onClick)=\"onCreateAccount.emit($event)\"\r\n            label=\"Sign up\"\r\n          ></storybook-button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </header>`,\r\n  styleUrls: ['./header.css'],\r\n})\r\nexport class HeaderComponent {\r\n  @Input()\r\n  user: User | null = null;\r\n\r\n  @Output()\r\n  onLogin = new EventEmitter<Event>();\r\n\r\n  @Output()\r\n  onLogout = new EventEmitter<Event>();\r\n\r\n  @Output()\r\n  onCreateAccount = new EventEmitter<Event>();\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".storybook-header {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\n.storybook-header svg {\n  display: inline-block;\n  vertical-align: top;\n}\n\n.storybook-header h1 {\n  font-weight: 700;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\n.storybook-header button + button {\n  margin-left: 10px;\n}\n\n.storybook-header .welcome {\n  color: #333;\n  font-size: 14px;\n  margin-right: 10px;\n}\n",
+                    "data": ".storybook-header {\r\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\r\n  padding: 15px 20px;\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: space-between;\r\n}\r\n\r\n.storybook-header svg {\r\n  display: inline-block;\r\n  vertical-align: top;\r\n}\r\n\r\n.storybook-header h1 {\r\n  font-weight: 700;\r\n  font-size: 20px;\r\n  line-height: 1;\r\n  margin: 6px 0 6px 10px;\r\n  display: inline-block;\r\n  vertical-align: top;\r\n}\r\n\r\n.storybook-header button + button {\r\n  margin-left: 10px;\r\n}\r\n\r\n.storybook-header .welcome {\r\n  color: #333;\r\n  font-size: 14px;\r\n  margin-right: 10px;\r\n}\r\n",
                     "styleUrl": "./header.css"
                 }
             ],
@@ -600,46 +733,109 @@
             "extends": []
         },
         {
-            "name": "LigthComponent",
-            "id": "component-LigthComponent-f000bd43e115519cf9d0daa2add93fa45fbbfd0dbc32d65bc36e1b8178d33ef2379602308e25ac79ca875ef31217d86a238f7dcc97cf5f275b05a03d48314174",
-            "file": "src/app/ligth/ligth.component.ts",
+            "name": "LigthCopyComponent",
+            "id": "component-LigthCopyComponent-dfab94e090c5856726a6436917da7550aa13878c3aaa7f1ca8e22772ad5bc7f204d8f7bdc494e680accafb04d692e3e3eb2d03ef4acf24873bf1c91c09ad6909",
+            "file": "src/app/light/ligth.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "app-ligth",
-            "styleUrls": [],
+            "selector": "app-light-copy",
+            "styleUrls": [
+                "./ligth.component.scss"
+            ],
             "styles": [],
             "templateUrl": [
                 "./ligth.component.html"
             ],
             "viewProviders": [],
             "hostDirectives": [],
-            "inputsClass": [],
-            "outputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "light",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "emitter",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "EventEmitter"
+                }
+            ],
             "propertiesClass": [],
-            "methodsClass": [],
+            "methodsClass": [
+                {
+                    "name": "buttonClick",
+                    "args": [
+                        {
+                            "name": "data",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 16,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "data",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
             "hostListeners": [],
             "standalone": true,
-            "imports": [],
+            "imports": [
+                {
+                    "name": "MatIconModule",
+                    "type": "module"
+                },
+                {
+                    "name": "MatGridListModule",
+                    "type": "module"
+                }
+            ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-ligth',\n  standalone: true,\n  imports: [],\n  templateUrl: './ligth.component.html',\n  styleUrl: './ligth.component.scss'\n})\nexport class LigthComponent {\n\n}\n",
-            "styleUrl": "./ligth.component.scss",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\r\nimport { MatIconModule } from '@angular/material/icon';\r\nimport { MatGridListModule } from '@angular/material/grid-list';\r\n\r\n@Component({\r\n  selector: 'app-light-copy',\r\n  standalone: true,\r\n  imports: [MatIconModule, MatGridListModule],\r\n  templateUrl: './ligth.component.html',\r\n  styleUrls: ['./ligth.component.scss']\r\n})\r\nexport class LigthCopyComponent {\r\n  @Input() light = false;\r\n  @Output() emitter = new EventEmitter() \r\n\r\n  buttonClick(data: string) {\r\n    const message = {\r\n      event: 'LigthCopyComponent:buttonClick', \r\n      data,\r\n    };\r\n    this.emitter.emit(message);\r\n  }\r\n}",
             "assetsDirs": [],
-            "styleUrlsData": "",
+            "styleUrlsData": [
+                {
+                    "data": "button {\r\n    font-size: 40px;\r\n}\r\nmat-grid-list {\r\n    max-width: 50%;\r\n}",
+                    "styleUrl": "./ligth.component.scss"
+                }
+            ],
             "stylesData": "",
             "extends": [],
-            "templateData": "<p>ligth works!</p>\n"
+            "templateData": "<!-- <button (click)='click()'>\r\n    Light {{ light ? 'ON' : 'OFF' }} \r\n</button> -->\r\n<mat-grid-list cols=\"2\" rowHeight=\"2:1\">\r\n    <mat-grid-tile>\r\n        <mat-icon>\r\n            {{light ? 'circle' : 'light_mode'}}\r\n        </mat-icon>\r\n    </mat-grid-tile>\r\n    <mat-grid-tile>\r\n        <mat-icon>auto_awesome</mat-icon>\r\n    </mat-grid-tile>\r\n    <mat-grid-tile>\r\n        <button (click)=\"buttonClick('switch')\" >\r\n            Light {{ light ? 'ON' : 'OFF' }} \r\n        </button>\r\n    </mat-grid-tile>\r\n    <mat-grid-tile>\r\n        <button (click)=\"buttonClick('blink')\">Blink</button>\r\n    </mat-grid-tile>\r\n</mat-grid-list>"
         },
         {
             "name": "NavComponent",
-            "id": "component-NavComponent-f14da8328bbe3faf9ac663ae0fbfb01c19fb75b48a5fdabc8148cf9f91ec2bd8fa1745ce6d06874ab198eda39fbd3222b994d2e7416809a6f8457e2dc52af5e8",
+            "id": "component-NavComponent-4562186a790b2af7bde8701111ed2aa18e9d16026e52c6107168c47d7ac36eea4b251030f2887ff982e1be5dcf565008af768e2f5f0943af99eb2f359badb757",
             "file": "src/app/nav/nav.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -733,28 +929,28 @@
                     "type": "module"
                 },
                 {
-                    "name": "SearchComponent",
-                    "type": "component"
-                },
-                {
                     "name": "MatMenuModule",
                     "type": "module"
+                },
+                {
+                    "name": "UserListComponent",
+                    "type": "component"
                 }
             ],
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { Component,  EventEmitter, Input, Output } from '@angular/core';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatToolbarModule } from '@angular/material/toolbar';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { SearchComponent} from '../search/search.component';\nimport {MatMenuModule} from '@angular/material/menu';\n\n\n\n@Component({\n  selector: 'app-nav',\n  standalone: true,\n  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatFormFieldModule, SearchComponent, MatMenuModule],\n  templateUrl: './nav.component.html',\n  styleUrl: './nav.component.scss'\n})\nexport class NavComponent {\n  @Input() message: string = '';\n  @Output() emitter = new EventEmitter();\n\n  buttonClicked(note: string) {\n    this.emitter.emit({\n      event: 'NavPanelComponent:BUTTON_CLICKED',\n      data: {note},\n    });\n  }\n}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\r\nimport { Component,  EventEmitter, Input, Output } from '@angular/core';\r\nimport { MatButtonModule } from '@angular/material/button';\r\nimport { MatIconModule } from '@angular/material/icon';\r\nimport { MatToolbarModule } from '@angular/material/toolbar';\r\nimport { MatFormFieldModule } from '@angular/material/form-field';\r\nimport { MatMenuModule } from '@angular/material/menu';\r\nimport { UserListComponent } from '../user-list/user-list.component';\r\n\r\n\r\n\r\n@Component({\r\n  selector: 'app-nav',\r\n  standalone: true,\r\n  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatFormFieldModule, MatMenuModule, UserListComponent],\r\n  templateUrl: './nav.component.html',\r\n  styleUrl: './nav.component.scss'\r\n})\r\nexport class NavComponent {\r\n  @Input() message: string = '';\r\n  @Output() emitter = new EventEmitter();\r\n\r\n  buttonClicked(note: string) {\r\n    this.emitter.emit({\r\n      event: 'NavPanelComponent:BUTTON_CLICKED',\r\n      data: {note},\r\n    });\r\n  }\r\n}\r\n",
             "styleUrl": "./nav.component.scss",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<mat-toolbar color = \"primary\">\n  <span class=\"marg-logo\"> <mat-icon> agriculture </mat-icon>  HardRent </span>\n  <button class=\"marg-tool\">\n    <span mat-icon-button >Главная</span>\n  </button>\n  <button class=\"marg-tool\">\n    <span>Арендодатели</span>\n  </button>\n  <button class=\"marg-tool\">\n    <span>Услуги</span>\n  </button>\n  <button class=\"marg-tool\">\n    <span>Калькулятор</span>\n  </button>\n  <button class=\"marg-tool\">\n    <span>Новости</span>\n  </button>\n  <button class=\"marg-tool\">\n    <span>Условия сотрудничества</span>\n  </button>\n  <span class=\"example-spacer\"></span>\n  <!-- <app-search></app-search> -->\n  <button mat-icon-button>\n    <mat-icon>search</mat-icon>\n  </button>\n  <button mat-icon-button>\n    <mat-icon> bookmark </mat-icon> \n  </button>\n  <button mat-icon-button >\n    <mat-icon> mail </mat-icon> \n  </button>\n\n  <button [matMenuTriggerFor]=\"account\"  mat-icon-button class=\"example-icon\">\n    <mat-icon>account_circle</mat-icon>\n  </button>\n\n  <mat-menu #menu=\"matMenu\">\n    <button mat-menu-item>\n      <mat-icon>dialpad</mat-icon>\n      <span>Redial</span>\n    </button>\n    <button mat-menu-item>\n      <mat-icon>voicemail</mat-icon>\n      <span>Check voice mail</span>\n    </button>\n    <button mat-menu-item>\n      <mat-icon>notifications_off</mat-icon>\n      <span>Disable alerts</span>\n    </button>\n  </mat-menu>\n\n  <mat-menu #account=\"matMenu\">\n    <button mat-menu-item (click)=\"buttonClicked('Sign out')\">\n      <mat-icon>logout</mat-icon>\n      <span>Sign out</span>\n    </button>\n  </mat-menu>\n  </mat-toolbar>\n"
+            "templateData": "<mat-toolbar color=\"primary\">\r\n  <button mat-icon-button [matMenuTriggerFor]=\"menu\" class=\"example-icon\" aria-label=\"Example icon-button with menu icon\">\r\n    <mat-icon>menu</mat-icon>\r\n  </button>\r\n  <span>{{ message }}</span>\r\n  <span class=\"example-spacer\"></span>\r\n  <button mat-icon-button class=\"example-icon favorite-icon\">\r\n    <mat-icon>settings</mat-icon>\r\n  </button>\r\n\r\n\r\n  <mat-menu #menu=\"matMenu\">\r\n    <button mat-menu-item>\r\n      <mat-icon>dialpad</mat-icon>\r\n      <span>Redial</span>\r\n    </button>\r\n    <button mat-menu-item>\r\n      <mat-icon>voicemail</mat-icon>\r\n      <span>Check voice mail</span>\r\n    </button>\r\n    <button mat-menu-item>\r\n      <mat-icon>notifications_off</mat-icon>\r\n      <span>Disable alerts</span>\r\n    </button>\r\n  </mat-menu>\r\n\r\n\r\n</mat-toolbar>"
         },
         {
             "name": "PageComponent",
-            "id": "component-PageComponent-d32b0f19628254ea3fc5526c4d4564ada1cc83cf936759006d90a46f5874b02a3359e331bddda20b22e74a616a6443c660602ba74dd38ebe1160759e0de6f7ba",
+            "id": "component-PageComponent-92f4cc9cc0054ccf9d578fc1ebe06b6d7ed1424277151dbedd6cfe73ba15609d9919dcba6e9acbd021b43117d9ce1f28adf6630c681037299b01a4c726c15a8e",
             "file": "src/stories/page.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -834,11 +1030,11 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\nimport { HeaderComponent } from './header.component';\nimport type { User } from './user';\n\n@Component({\n  selector: 'storybook-page',\n  standalone: true,\n  imports: [CommonModule, HeaderComponent],\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section class=\"storybook-page\">\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "sourceCode": "import { Component } from '@angular/core';\r\nimport { CommonModule } from '@angular/common';\r\n\r\nimport { HeaderComponent } from './header.component';\r\nimport type { User } from './user';\r\n\r\n@Component({\r\n  selector: 'storybook-page',\r\n  standalone: true,\r\n  imports: [CommonModule, HeaderComponent],\r\n  template: `<article>\r\n    <storybook-header\r\n      [user]=\"user\"\r\n      (onLogout)=\"doLogout()\"\r\n      (onLogin)=\"doLogin()\"\r\n      (onCreateAccount)=\"doCreateAccount()\"\r\n    ></storybook-header>\r\n    <section class=\"storybook-page\">\r\n      <h2>Pages in Storybook</h2>\r\n      <p>\r\n        We recommend building UIs with a\r\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\r\n          <strong>component-driven</strong>\r\n        </a>\r\n        process starting with atomic components and ending with pages.\r\n      </p>\r\n      <p>\r\n        Render pages with mock data. This makes it easy to build and review page states without\r\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\r\n        in Storybook:\r\n      </p>\r\n      <ul>\r\n        <li>\r\n          Use a higher-level connected component. Storybook helps you compose such data from the\r\n          \"args\" of child component stories\r\n        </li>\r\n        <li>\r\n          Assemble data in the page component from your services. You can mock these services out\r\n          using Storybook.\r\n        </li>\r\n      </ul>\r\n      <p>\r\n        Get a guided tutorial on component-driven development at\r\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\r\n          Storybook tutorials\r\n        </a>\r\n        . Read more in the\r\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\r\n        .\r\n      </p>\r\n      <div class=\"tip-wrapper\">\r\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\r\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\r\n          <g fill=\"none\" fillRule=\"evenodd\">\r\n            <path\r\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\r\n              id=\"a\"\r\n              fill=\"#999\"\r\n            />\r\n          </g>\r\n        </svg>\r\n        Viewports addon in the toolbar\r\n      </div>\r\n    </section>\r\n  </article>`,\r\n  styleUrls: ['./page.css'],\r\n})\r\nexport class PageComponent {\r\n  user: User | null = null;\r\n\r\n  doLogout() {\r\n    this.user = null;\r\n  }\r\n\r\n  doLogin() {\r\n    this.user = { name: 'Jane Doe' };\r\n  }\r\n\r\n  doCreateAccount() {\r\n    this.user = { name: 'Jane Doe' };\r\n  }\r\n}\r\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".storybook-page {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\n.storybook-page h2 {\n  font-weight: 700;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\n.storybook-page p {\n  margin: 1em 0;\n}\n\n.storybook-page a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\n.storybook-page ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\n.storybook-page li {\n  margin-bottom: 8px;\n}\n\n.storybook-page .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\n.storybook-page .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\n.storybook-page .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\n.storybook-page .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "data": ".storybook-page {\r\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\r\n  font-size: 14px;\r\n  line-height: 24px;\r\n  padding: 48px 20px;\r\n  margin: 0 auto;\r\n  max-width: 600px;\r\n  color: #333;\r\n}\r\n\r\n.storybook-page h2 {\r\n  font-weight: 700;\r\n  font-size: 32px;\r\n  line-height: 1;\r\n  margin: 0 0 4px;\r\n  display: inline-block;\r\n  vertical-align: top;\r\n}\r\n\r\n.storybook-page p {\r\n  margin: 1em 0;\r\n}\r\n\r\n.storybook-page a {\r\n  text-decoration: none;\r\n  color: #1ea7fd;\r\n}\r\n\r\n.storybook-page ul {\r\n  padding-left: 30px;\r\n  margin: 1em 0;\r\n}\r\n\r\n.storybook-page li {\r\n  margin-bottom: 8px;\r\n}\r\n\r\n.storybook-page .tip {\r\n  display: inline-block;\r\n  border-radius: 1em;\r\n  font-size: 11px;\r\n  line-height: 12px;\r\n  font-weight: 700;\r\n  background: #e7fdd8;\r\n  color: #66bf3c;\r\n  padding: 4px 12px;\r\n  margin-right: 10px;\r\n  vertical-align: top;\r\n}\r\n\r\n.storybook-page .tip-wrapper {\r\n  font-size: 13px;\r\n  line-height: 20px;\r\n  margin-top: 40px;\r\n  margin-bottom: 40px;\r\n}\r\n\r\n.storybook-page .tip-wrapper svg {\r\n  display: inline-block;\r\n  height: 12px;\r\n  width: 12px;\r\n  margin-right: 4px;\r\n  vertical-align: top;\r\n  margin-top: 3px;\r\n}\r\n\r\n.storybook-page .tip-wrapper svg path {\r\n  fill: #1ea7fd;\r\n}\r\n",
                     "styleUrl": "./page.css"
                 }
             ],
@@ -846,26 +1042,74 @@
             "extends": []
         },
         {
-            "name": "SearchComponent",
-            "id": "component-SearchComponent-12e5954d2b4b566e0e60ecfadd053c5b935a7d8f13c23845d216fbdf5c6a06fce994a1e0b2ae65d6761aca3fa698ab1bc1a212e6d5751a0f4cdf3923d4005240",
-            "file": "src/app/search/search.component.ts",
+            "name": "SpeedControlComponent",
+            "id": "component-SpeedControlComponent-dcb4e346706082e03b73af9d213859e37d8cdf1b52e3116c511a35ab37923e0978da5de611d0f868633bc8a3d4874b54e63690f78a4b07cee01507b4db70046d",
+            "file": "src/app/speed-control/speed-control.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "app-search",
+            "selector": "app-speed-control",
             "styleUrls": [],
             "styles": [],
             "templateUrl": [
-                "./search.component.html"
+                "./speed-control.component.html"
             ],
             "viewProviders": [],
             "hostDirectives": [],
-            "inputsClass": [],
-            "outputsClass": [],
+            "inputsClass": [
+                {
+                    "name": "buttons",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 21,
+                    "type": "SpeedControlComponentButton[]",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "emitter",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 23,
+                    "type": "EventEmitter"
+                }
+            ],
             "propertiesClass": [],
-            "methodsClass": [],
+            "methodsClass": [
+                {
+                    "name": "buttonClick",
+                    "args": [
+                        {
+                            "name": "data",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 25,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "data",
+                            "type": "number",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
             "deprecated": false,
             "deprecationMessage": "",
             "hostBindings": [],
@@ -873,11 +1117,233 @@
             "standalone": true,
             "imports": [
                 {
-                    "name": "CommonModule",
+                    "name": "MatIconModule",
                     "type": "module"
                 },
                 {
-                    "name": "MatFormFieldModule",
+                    "name": "ControlButtonsComponent",
+                    "type": "component"
+                },
+                {
+                    "name": "MatButtonModule",
+                    "type": "module"
+                },
+                {
+                    "name": "MatButtonToggleModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { MatIconModule } from '@angular/material/icon';\nimport { ControlButtonsComponent } from '../control-buttons/control-buttons.component';\nimport { MatButtonModule } from '@angular/material/button';\nimport {MatButtonToggleModule} from '@angular/material/button-toggle';\n\nexport interface SpeedControlComponentButton {\n  speed: number;\n  text: string;\n  selected?: boolean;\n}\n\n@Component({\n  selector: 'app-speed-control',\n  standalone: true,\n  imports: [MatIconModule, ControlButtonsComponent, MatButtonModule, MatButtonToggleModule],\n  templateUrl: './speed-control.component.html',\n  styleUrl: './speed-control.component.scss'\n})\nexport class SpeedControlComponent {\n  @Input() buttons: SpeedControlComponentButton[] = [];\n\n  @Output() emitter = new EventEmitter() \n  \n  buttonClick(data: number) {\n    const message = {\n      event: 'SpeedControlComponent:buttonClick', \n      data,\n    };\n    this.emitter.emit(message);\n  }\n\n  \n}\n",
+            "styleUrl": "./speed-control.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<div>\r\n    <mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\" value=\"true\" >\r\n        @for (button of buttons; track button) {\r\n            <mat-button-toggle value=\"{{button.selected}}\" (click)=\"buttonClick(button.speed)\" >\r\n                {{button.text}}\r\n            </mat-button-toggle>\r\n        }\r\n    </mat-button-toggle-group>\r\n    <app-control-buttons (emitter)=\"emitter.emit($event)\" ></app-control-buttons>\r\n</div>"
+        },
+        {
+            "name": "UsbListComponent",
+            "id": "component-UsbListComponent-6ff60185757569dc213a894bf9a2375271d10249303c07f0a0bf50acdcd14b390f0b8cec4e628a93ad089b45a65290621d0e26eeb24ed186c90681692e6a4833",
+            "file": "src/app/usb-list/usb-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-usb-list",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./usb-list.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "usbList",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "IUsb[] | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "emitter",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "displayedColumns",
+                    "defaultValue": "['name', 'actions', 'status']",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 18
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "buttonClick",
+                    "args": [
+                        {
+                            "name": "message",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        },
+                        {
+                            "name": "note",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "defaultValue": "{}"
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 20,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "message",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        },
+                        {
+                            "name": "note",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "defaultValue": "{}",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "MatIconModule",
+                    "type": "module"
+                },
+                {
+                    "name": "MatCardModule",
+                    "type": "module"
+                }
+            ],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\nimport { MatCardModule } from '@angular/material/card';\nimport { MatIconModule } from '@angular/material/icon';\nimport { IUsb } from '../datal/config.reducer';\n\n@Component({\n  selector: 'app-usb-list',\n  standalone: true,\n  imports: [MatIconModule, MatCardModule],\n  templateUrl: './usb-list.component.html',\n  styleUrl: './usb-list.component.scss'\n})\nexport class UsbListComponent {\n  @Input() usbList: IUsb[] | null = [];\n\n  @Output() emitter = new EventEmitter();\n\n  displayedColumns: string[] = ['name', 'actions', 'status'];\n\n  buttonClick(message: string, note: any = {}) {\n    this.emitter.emit({\n      event: 'UsbListComponent:BUTTON_CLICKED',\n      data: {message, note},\n    });\n}\n}\n",
+            "styleUrl": "./usb-list.component.scss",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "extends": [],
+            "templateData": "<mat-card class=\"cards\">\n    <mat-card-content>\n    <div class=\"header\">\n        <h3>USB Ports</h3>\n        <button mat-icon-button (click)=\"buttonClick('GET_USB_DEVICES')\">\n        <mat-icon>sync</mat-icon>\n        </button>\n    </div>\n    <hr>\n    <table>\n\n        <!-- Name Column -->\n        <ng-container matColumnDef=\"name\">\n        <th mat-header-cell *matHeaderCellDef>Name</th>\n        <td mat-cell *matCellDef=\"let item\">{{item.name}}</td>\n        </ng-container>\n\n        <!-- Actions Column -->\n        <ng-container matColumnDef=\"actions\">\n            <th mat-header-cell *matHeaderCellDef>Actions</th>\n            <td mat-cell *matCellDef=\"let item\">\n                <button\n                    (click)=\"buttonClick('CONNECT_USB_DEVICE', {item})\"\n                    mat-raised-button\n                    color=\"primary\"\n                    class=\"example-icon\">\n                    <mat-icon>account_circle</mat-icon>\n                    <span>Connect</span>\n                </button>\n            </td>\n        </ng-container>\n\n        <!-- Status Column -->\n        <ng-container matColumnDef=\"status\">\n        <th mat-header-cell *matHeaderCellDef>Status</th>\n        <td mat-cell *matCellDef=\"let item\">\n            OFF\n        </td>\n        </ng-container>\n\n        <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n        <tr\n        mat-row\n        *matRowDef=\"let row; columns: displayedColumns;\"\n        ></tr>\n    </table>\n    </mat-card-content>\n</mat-card>  "
+        },
+        {
+            "name": "UserListComponent",
+            "id": "component-UserListComponent-80184e002c672b60b2f75fddf7ef0dae140f061aac904c9987028b46297d156f1d4a948239d3874a91e5d0d6ddd25c4551eb7fb088705b58e1bcffc41b4ff1b3",
+            "file": "src/app/user-list/user-list.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-user-list",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./user-list.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [
+                {
+                    "name": "users",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "IUser[] | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "emitter",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "buttonClicked",
+                    "args": [
+                        {
+                            "name": "user",
+                            "type": "IUser",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "user",
+                            "type": "IUser",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": true,
+            "imports": [
+                {
+                    "name": "MatCardModule",
                     "type": "module"
                 },
                 {
@@ -888,13 +1354,13 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\nimport {MatFormFieldModule} from '@angular/material/form-field';\nimport { MatIconModule } from '@angular/material/icon';\nimport {CommonModule} from '@angular/common';\n\n@Component({\n  selector: 'app-search',\n  standalone: true,\n  imports: [CommonModule, MatFormFieldModule, MatIconModule],\n  templateUrl: './search.component.html',\n  styleUrl: './search.component.scss'\n})\nexport class SearchComponent {\n\n}\n",
-            "styleUrl": "./search.component.scss",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\nimport { IUser } from '../datal/config.reducer';\nimport { MatCardModule } from '@angular/material/card';\nimport { MatIconModule } from '@angular/material/icon';\n\n@Component({\n  selector: 'app-user-list',\n  standalone: true,\n  imports: [MatCardModule, MatIconModule],\n  templateUrl: './user-list.component.html',\n  styleUrl: './user-list.component.scss'\n})\nexport class UserListComponent {\n  @Input() users: IUser[] | null = [];\n  @Output() emitter = new EventEmitter();\n\n  buttonClicked(user: IUser) {\n    this.emitter.emit({\n      event: 'UsbListComponent:BUTTON_CLICKED',\n      data: {user},\n    });\n  }\n}\n",
+            "styleUrl": "./user-list.component.scss",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
             "extends": [],
-            "templateData": "<mat-form-field>\n  <mat-label>search</mat-label>\n  <input matInput type=\"text\" placeholder=\"Введите запрос\">\n</mat-form-field>"
+            "templateData": "<mat-card class=\"cards\">\n    <mat-card-content>\n      <h3>Log In</h3>\n      <hr>\n      @for (user of users; track user) {\n      <div>\n        <button\n          (click)=\"buttonClicked(user)\"\n          mat-raised-button\n          color=\"primary\"\n          class=\"example-icon\">\n          <mat-icon>account_circle</mat-icon>\n          <span>{{user.name}}</span>\n        </button>\n      </div>\n    }\n    </mat-card-content>\n  </mat-card>\n  "
         }
     ],
     "modules": [],
@@ -908,7 +1374,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "ApplicationConfig",
-                "defaultValue": "{\n  providers: [provideRouter(routes), provideClientHydration(), provideAnimations()]\n}"
+                "defaultValue": "{\r\n  providers: [provideRouter(routes), provideClientHydration(), provideAnimations(), provideAnimations(), provideAnimations()]\r\n}"
             },
             {
                 "name": "bootstrap",
@@ -931,6 +1397,26 @@
                 "defaultValue": "mergeApplicationConfig(appConfig, serverConfig)"
             },
             {
+                "name": "CONFIG_FEATURE_KEY",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/datal/config.reducer.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string",
+                "defaultValue": "'config'"
+            },
+            {
+                "name": "initialState",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/datal/config.reducer.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "ConfigState",
+                "defaultValue": "{\r\n  userList:[\r\n    {id: 1, name: 'User1', role: 'admin'},\r\n    {id: 2, name: 'User2', role: 'admin'},\r\n  ],\r\n}"
+            },
+            {
                 "name": "Large",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -938,7 +1424,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                "defaultValue": "{\r\n  args: {\r\n    size: 'large',\r\n    label: 'Button',\r\n  },\r\n}"
             },
             {
                 "name": "LoggedIn",
@@ -948,7 +1434,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    user: {\n      name: 'Jane Doe',\n    },\n  },\n}"
+                "defaultValue": "{\r\n  args: {\r\n    user: {\r\n      name: 'Jane Doe',\r\n    },\r\n  },\r\n}"
             },
             {
                 "name": "LoggedIn",
@@ -958,7 +1444,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = canvas.getByRole('button', { name: /Log in/i });\n    await expect(loginButton).toBeInTheDocument();\n    await userEvent.click(loginButton);\n    await expect(loginButton).not.toBeInTheDocument();\n\n    const logoutButton = canvas.getByRole('button', { name: /Log out/i });\n    await expect(logoutButton).toBeInTheDocument();\n  },\n}"
+                "defaultValue": "{\r\n  play: async ({ canvasElement }) => {\r\n    const canvas = within(canvasElement);\r\n    const loginButton = canvas.getByRole('button', { name: /Log in/i });\r\n    await expect(loginButton).toBeInTheDocument();\r\n    await userEvent.click(loginButton);\r\n    await expect(loginButton).not.toBeInTheDocument();\r\n\r\n    const logoutButton = canvas.getByRole('button', { name: /Log out/i });\r\n    await expect(logoutButton).toBeInTheDocument();\r\n  },\r\n}"
             },
             {
                 "name": "LoggedOut",
@@ -988,7 +1474,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<ButtonComponent>",
-                "defaultValue": "{\n  title: 'Example/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  render: (args: ButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                "defaultValue": "{\r\n  title: 'Example/Button',\r\n  component: ButtonComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ButtonComponent) => ({\r\n    props: {\r\n      backgroundColor: null,\r\n      ...args,\r\n    },\r\n  }),\r\n  argTypes: {\r\n    backgroundColor: {\r\n      control: 'color',\r\n    },\r\n  },\r\n}"
             },
             {
                 "name": "meta",
@@ -998,7 +1484,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<HeaderComponent>",
-                "defaultValue": "{\n  title: 'Example/Header',\n  component: HeaderComponent,\n  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs\n  tags: ['autodocs'],\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+                "defaultValue": "{\r\n  title: 'Example/Header',\r\n  component: HeaderComponent,\r\n  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs\r\n  tags: ['autodocs'],\r\n  parameters: {\r\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\r\n    layout: 'fullscreen',\r\n  },\r\n}"
             },
             {
                 "name": "meta",
@@ -1008,27 +1494,27 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<PageComponent>",
-                "defaultValue": "{\n  title: 'Example/Page',\n  component: PageComponent,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+                "defaultValue": "{\r\n  title: 'Example/Page',\r\n  component: PageComponent,\r\n  parameters: {\r\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\r\n    layout: 'fullscreen',\r\n  },\r\n}"
             },
             {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/all-category/all-category.stories.ts",
+                "file": "src/app/account-menu/account-menu.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<AllCategoryComponent>",
-                "defaultValue": "{\r\n  title: 'UI Components/AllCategoryComponent',\r\n  component: AllCategoryComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: AllCategoryComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                "type": "Meta<AccountMenuComponent>",
+                "defaultValue": "{\r\n  title: 'UI Components/AccountMenuComponent',\r\n  component: AccountMenuComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [MatFormFieldModule, MatToolbarModule, MatButtonModule, MatIconModule, BrowserAnimationsModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: AccountMenuComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
             },
             {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/category/category.stories.ts",
+                "file": "src/app/control-buttons/control-buttons.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<CategoryComponent>",
-                "defaultValue": "{\r\n  title: 'UI Components/CategoryComponent',\r\n  component: CategoryComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, BrowserAnimationsModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: CategoryComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                "type": "Meta<ControlButtonsComponent>",
+                "defaultValue": "{\r\n  title: 'UI Components/ControlButtonsComponent',\r\n  component: ControlButtonsComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: ControlButtonsComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
             },
             {
                 "name": "meta",
@@ -1044,11 +1530,11 @@
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/ligth/ligth.stories.ts",
+                "file": "src/app/light/ligth.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<LigthComponent>",
-                "defaultValue": "{\r\n  title: 'UI Components/LigthComponent',\r\n  component: LigthComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: LigthComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                "type": "Meta<LigthCopyComponent>",
+                "defaultValue": "{\r\n  title: 'UI Components/LigthCopyComponent',\r\n  component: LigthCopyComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [MatGridListModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: LigthCopyComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
             },
             {
                 "name": "meta",
@@ -1058,17 +1544,37 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Meta<NavComponent>",
-                "defaultValue": "{\r\n  title: 'UI Components/NavComponent',\r\n  component: NavComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatFormFieldModule, SearchComponent],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: NavComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                "defaultValue": "{\r\n  title: 'UI Components/NavComponent',\r\n  component: NavComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatFormFieldModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: NavComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
             },
             {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/search/search.stories.ts",
+                "file": "src/app/speed-control/speed-control.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<SearchComponent>",
-                "defaultValue": "{\r\n  title: 'UI Components/SearchComponent',\r\n  component: SearchComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, MatFormFieldModule, MatIconModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: SearchComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                "type": "Meta<SpeedControlComponent>",
+                "defaultValue": "{\r\n  title: 'UI Components/SpeedControlComponent',\r\n  component: SpeedControlComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [ControlButtonsComponent],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: SpeedControlComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/usb-list/usb-list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<UsbListComponent>",
+                "defaultValue": "{\r\n  title: 'UI Components/UsbListComponent',\r\n  component: UsbListComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, MatIconModule, MatButtonModule, MatCardModule, MatTableModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: UsbListComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/user-list/user-list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<UserListComponent>",
+                "defaultValue": "{\r\n  title: 'UI Components/UserListComponent',\r\n  component: UserListComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, MatIconModule, MatButtonModule, MatCardModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: UserListComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
             },
             {
                 "name": "preview",
@@ -1078,7 +1584,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Preview",
-                "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
+                "defaultValue": "{\r\n  parameters: {\r\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\r\n    controls: {\r\n      matchers: {\r\n        color: /(background|color)$/i,\r\n        date: /Date$/i,\r\n      },\r\n    },\r\n  },\r\n}"
             },
             {
                 "name": "Primary",
@@ -1088,27 +1594,27 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+                "defaultValue": "{\r\n  args: {\r\n    primary: true,\r\n    label: 'Button',\r\n  },\r\n}"
             },
             {
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/all-category/all-category.stories.ts",
+                "file": "src/app/account-menu/account-menu.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n  }\r\n}"
             },
             {
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/category/category.stories.ts",
+                "file": "src/app/control-buttons/control-buttons.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    },\r\n}"
             },
             {
                 "name": "Primary",
@@ -1124,11 +1630,11 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/ligth/ligth.stories.ts",
+                "file": "src/app/light/ligth.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    light: true\r\n    },\r\n}"
             },
             {
                 "name": "Primary",
@@ -1144,11 +1650,31 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/app/search/search.stories.ts",
+                "file": "src/app/speed-control/speed-control.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\r\n  args: {\r\n  },\r\n}"
+                "defaultValue": "{\r\n  args: {\r\n    buttons: [\r\n      {text: 'X0,25',  speed: 0.25, selected: false},\r\n      {text: 'X0,5',  speed: 0.5, selected: false},\r\n      {text: 'X1',  speed: 1, selected: true},\r\n      {text: 'X2',  speed: 2, selected: false},\r\n      {text: 'X3', speed: 3, selected: false},\r\n      {text: 'X5', speed: 5, selected: false},\r\n    ]\r\n  },\r\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/usb-list/usb-list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    usbList: [\r\n      {name: '/dev/tty.Buds2ProAlexey'},\r\n      {name: '/dev/tty.Bluetooth-Incoming-Port'},\r\n    ] ,\r\n  },\r\n}"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/app/user-list/user-list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{\r\n  args: {\r\n    users: [\r\n      {id: 1, name: 'User1', role: 'admin'},\r\n      {id: 2, name: 'User2', role: 'admin'},\r\n    ],\r\n  },\r\n}"
             },
             {
                 "name": "Secondary",
@@ -1158,7 +1684,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+                "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n  },\r\n}"
             },
             {
                 "name": "serverConfig",
@@ -1168,7 +1694,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "ApplicationConfig",
-                "defaultValue": "{\n  providers: [\n    provideServerRendering()\n  ]\n}"
+                "defaultValue": "{\r\n  providers: [\r\n    provideServerRendering()\r\n  ]\r\n}"
             },
             {
                 "name": "Small",
@@ -1178,17 +1704,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
-                "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
-            },
-            {
-                "name": "TREE_DATA",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/app/data/EquipmentСatalog.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "FoodNode[]",
-                "defaultValue": "[\r\n    {\r\n      name: 'Экскаваторы',\r\n      children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    },\r\n    {\r\n        name: 'Бульдозеры'\r\n      },\r\n      {\r\n        name: 'Буровое оборудование',\r\n        children: [{name: 'Установки вертикального бурения'}, {name: 'Установки горизонтального бурения'}, {name: 'Бензорубы'}],\r\n      },\r\n      {\r\n        name: 'Погрузчики строительные',\r\n        children: [{name: 'Погрузчики фронтальные'}, {name: 'Погрузчики телескопические'}, {name: 'Мини-погрузчики'}, {name: 'Мини-погрузчики гусенечные'}],\r\n      },\r\n      {\r\n        name: 'Краны строительные',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Подъемники строительные',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Разная спецтехника',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Автомобили, грузоперевозки',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n  ]"
+                "defaultValue": "{\r\n  args: {\r\n    size: 'small',\r\n    label: 'Button',\r\n  },\r\n}"
             }
         ],
         "functions": [],
@@ -1230,8 +1746,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<AllCategoryComponent>",
-                "file": "src/app/all-category/all-category.stories.ts",
+                "rawtype": "StoryObj<AccountMenuComponent>",
+                "file": "src/app/account-menu/account-menu.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1241,8 +1757,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<CategoryComponent>",
-                "file": "src/app/category/category.stories.ts",
+                "rawtype": "StoryObj<ControlButtonsComponent>",
+                "file": "src/app/control-buttons/control-buttons.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1263,8 +1779,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<LigthComponent>",
-                "file": "src/app/ligth/ligth.stories.ts",
+                "rawtype": "StoryObj<LigthCopyComponent>",
+                "file": "src/app/light/ligth.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1285,8 +1801,30 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<SearchComponent>",
-                "file": "src/app/search/search.stories.ts",
+                "rawtype": "StoryObj<SpeedControlComponent>",
+                "file": "src/app/speed-control/speed-control.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<UsbListComponent>",
+                "file": "src/app/usb-list/usb-list.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 183
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<UserListComponent>",
+                "file": "src/app/user-list/user-list.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -1304,7 +1842,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "ApplicationConfig",
-                    "defaultValue": "{\n  providers: [provideRouter(routes), provideClientHydration(), provideAnimations()]\n}"
+                    "defaultValue": "{\r\n  providers: [provideRouter(routes), provideClientHydration(), provideAnimations(), provideAnimations(), provideAnimations()]\r\n}"
                 }
             ],
             "src/main.server.ts": [
@@ -1338,7 +1876,29 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "ApplicationConfig",
-                    "defaultValue": "{\n  providers: [\n    provideServerRendering()\n  ]\n}"
+                    "defaultValue": "{\r\n  providers: [\r\n    provideServerRendering()\r\n  ]\r\n}"
+                }
+            ],
+            "src/app/datal/config.reducer.ts": [
+                {
+                    "name": "CONFIG_FEATURE_KEY",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/datal/config.reducer.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "defaultValue": "'config'"
+                },
+                {
+                    "name": "initialState",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/datal/config.reducer.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ConfigState",
+                    "defaultValue": "{\r\n  userList:[\r\n    {id: 1, name: 'User1', role: 'admin'},\r\n    {id: 2, name: 'User2', role: 'admin'},\r\n  ],\r\n}"
                 }
             ],
             "src/stories/button.stories.ts": [
@@ -1350,7 +1910,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'large',\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    size: 'large',\r\n    label: 'Button',\r\n  },\r\n}"
                 },
                 {
                     "name": "meta",
@@ -1360,7 +1920,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<ButtonComponent>",
-                    "defaultValue": "{\n  title: 'Example/Button',\n  component: ButtonComponent,\n  tags: ['autodocs'],\n  render: (args: ButtonComponent) => ({\n    props: {\n      backgroundColor: null,\n      ...args,\n    },\n  }),\n  argTypes: {\n    backgroundColor: {\n      control: 'color',\n    },\n  },\n}"
+                    "defaultValue": "{\r\n  title: 'Example/Button',\r\n  component: ButtonComponent,\r\n  tags: ['autodocs'],\r\n  render: (args: ButtonComponent) => ({\r\n    props: {\r\n      backgroundColor: null,\r\n      ...args,\r\n    },\r\n  }),\r\n  argTypes: {\r\n    backgroundColor: {\r\n      control: 'color',\r\n    },\r\n  },\r\n}"
                 },
                 {
                     "name": "Primary",
@@ -1370,7 +1930,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    primary: true,\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    primary: true,\r\n    label: 'Button',\r\n  },\r\n}"
                 },
                 {
                     "name": "Secondary",
@@ -1380,7 +1940,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    label: 'Button',\r\n  },\r\n}"
                 },
                 {
                     "name": "Small",
@@ -1390,7 +1950,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    size: 'small',\n    label: 'Button',\n  },\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    size: 'small',\r\n    label: 'Button',\r\n  },\r\n}"
                 }
             ],
             "src/stories/header.stories.ts": [
@@ -1402,7 +1962,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  args: {\n    user: {\n      name: 'Jane Doe',\n    },\n  },\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    user: {\r\n      name: 'Jane Doe',\r\n    },\r\n  },\r\n}"
                 },
                 {
                     "name": "LoggedOut",
@@ -1422,7 +1982,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<HeaderComponent>",
-                    "defaultValue": "{\n  title: 'Example/Header',\n  component: HeaderComponent,\n  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs\n  tags: ['autodocs'],\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+                    "defaultValue": "{\r\n  title: 'Example/Header',\r\n  component: HeaderComponent,\r\n  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs\r\n  tags: ['autodocs'],\r\n  parameters: {\r\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\r\n    layout: 'fullscreen',\r\n  },\r\n}"
                 }
             ],
             "src/stories/page.stories.ts": [
@@ -1434,7 +1994,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\n  play: async ({ canvasElement }) => {\n    const canvas = within(canvasElement);\n    const loginButton = canvas.getByRole('button', { name: /Log in/i });\n    await expect(loginButton).toBeInTheDocument();\n    await userEvent.click(loginButton);\n    await expect(loginButton).not.toBeInTheDocument();\n\n    const logoutButton = canvas.getByRole('button', { name: /Log out/i });\n    await expect(logoutButton).toBeInTheDocument();\n  },\n}"
+                    "defaultValue": "{\r\n  play: async ({ canvasElement }) => {\r\n    const canvas = within(canvasElement);\r\n    const loginButton = canvas.getByRole('button', { name: /Log in/i });\r\n    await expect(loginButton).toBeInTheDocument();\r\n    await userEvent.click(loginButton);\r\n    await expect(loginButton).not.toBeInTheDocument();\r\n\r\n    const logoutButton = canvas.getByRole('button', { name: /Log out/i });\r\n    await expect(logoutButton).toBeInTheDocument();\r\n  },\r\n}"
                 },
                 {
                     "name": "LoggedOut",
@@ -1454,51 +2014,51 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<PageComponent>",
-                    "defaultValue": "{\n  title: 'Example/Page',\n  component: PageComponent,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\n    layout: 'fullscreen',\n  },\n}"
+                    "defaultValue": "{\r\n  title: 'Example/Page',\r\n  component: PageComponent,\r\n  parameters: {\r\n    // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout\r\n    layout: 'fullscreen',\r\n  },\r\n}"
                 }
             ],
-            "src/app/all-category/all-category.stories.ts": [
+            "src/app/account-menu/account-menu.stories.ts": [
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/all-category/all-category.stories.ts",
+                    "file": "src/app/account-menu/account-menu.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Meta<AllCategoryComponent>",
-                    "defaultValue": "{\r\n  title: 'UI Components/AllCategoryComponent',\r\n  component: AllCategoryComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: AllCategoryComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                    "type": "Meta<AccountMenuComponent>",
+                    "defaultValue": "{\r\n  title: 'UI Components/AccountMenuComponent',\r\n  component: AccountMenuComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [MatFormFieldModule, MatToolbarModule, MatButtonModule, MatIconModule, BrowserAnimationsModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: AccountMenuComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
                 },
                 {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/all-category/all-category.stories.ts",
+                    "file": "src/app/account-menu/account-menu.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n  }\r\n}"
                 }
             ],
-            "src/app/category/category.stories.ts": [
+            "src/app/control-buttons/control-buttons.stories.ts": [
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/category/category.stories.ts",
+                    "file": "src/app/control-buttons/control-buttons.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Meta<CategoryComponent>",
-                    "defaultValue": "{\r\n  title: 'UI Components/CategoryComponent',\r\n  component: CategoryComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, BrowserAnimationsModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: CategoryComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                    "type": "Meta<ControlButtonsComponent>",
+                    "defaultValue": "{\r\n  title: 'UI Components/ControlButtonsComponent',\r\n  component: ControlButtonsComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: ControlButtonsComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
                 },
                 {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/category/category.stories.ts",
+                    "file": "src/app/control-buttons/control-buttons.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    },\r\n}"
                 }
             ],
             "src/app/footer/footer.stories.ts": [
@@ -1523,26 +2083,26 @@
                     "defaultValue": "{\r\n  args: {\r\n  },\r\n}"
                 }
             ],
-            "src/app/ligth/ligth.stories.ts": [
+            "src/app/light/ligth.stories.ts": [
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/ligth/ligth.stories.ts",
+                    "file": "src/app/light/ligth.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Meta<LigthComponent>",
-                    "defaultValue": "{\r\n  title: 'UI Components/LigthComponent',\r\n  component: LigthComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: LigthComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                    "type": "Meta<LigthCopyComponent>",
+                    "defaultValue": "{\r\n  title: 'UI Components/LigthCopyComponent',\r\n  component: LigthCopyComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [MatGridListModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: LigthCopyComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
                 },
                 {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/ligth/ligth.stories.ts",
+                    "file": "src/app/light/ligth.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    light: true\r\n    },\r\n}"
                 }
             ],
             "src/app/nav/nav.stories.ts": [
@@ -1554,7 +2114,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Meta<NavComponent>",
-                    "defaultValue": "{\r\n  title: 'UI Components/NavComponent',\r\n  component: NavComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatFormFieldModule, SearchComponent],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: NavComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                    "defaultValue": "{\r\n  title: 'UI Components/NavComponent',\r\n  component: NavComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatFormFieldModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: NavComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
                 },
                 {
                     "name": "Primary",
@@ -1567,26 +2127,70 @@
                     "defaultValue": "{\r\n  args: {\r\n  },\r\n}"
                 }
             ],
-            "src/app/search/search.stories.ts": [
+            "src/app/speed-control/speed-control.stories.ts": [
                 {
                     "name": "meta",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/search/search.stories.ts",
+                    "file": "src/app/speed-control/speed-control.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Meta<SearchComponent>",
-                    "defaultValue": "{\r\n  title: 'UI Components/SearchComponent',\r\n  component: SearchComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, MatFormFieldModule, MatIconModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: SearchComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                    "type": "Meta<SpeedControlComponent>",
+                    "defaultValue": "{\r\n  title: 'UI Components/SpeedControlComponent',\r\n  component: SpeedControlComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [ControlButtonsComponent],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: SpeedControlComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
                 },
                 {
                     "name": "Primary",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/app/search/search.stories.ts",
+                    "file": "src/app/speed-control/speed-control.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story",
-                    "defaultValue": "{\r\n  args: {\r\n  },\r\n}"
+                    "defaultValue": "{\r\n  args: {\r\n    buttons: [\r\n      {text: 'X0,25',  speed: 0.25, selected: false},\r\n      {text: 'X0,5',  speed: 0.5, selected: false},\r\n      {text: 'X1',  speed: 1, selected: true},\r\n      {text: 'X2',  speed: 2, selected: false},\r\n      {text: 'X3', speed: 3, selected: false},\r\n      {text: 'X5', speed: 5, selected: false},\r\n    ]\r\n  },\r\n}"
+                }
+            ],
+            "src/app/usb-list/usb-list.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/usb-list/usb-list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<UsbListComponent>",
+                    "defaultValue": "{\r\n  title: 'UI Components/UsbListComponent',\r\n  component: UsbListComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, MatIconModule, MatButtonModule, MatCardModule, MatTableModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: UsbListComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/usb-list/usb-list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    usbList: [\r\n      {name: '/dev/tty.Buds2ProAlexey'},\r\n      {name: '/dev/tty.Bluetooth-Incoming-Port'},\r\n    ] ,\r\n  },\r\n}"
+                }
+            ],
+            "src/app/user-list/user-list.stories.ts": [
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/user-list/user-list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<UserListComponent>",
+                    "defaultValue": "{\r\n  title: 'UI Components/UserListComponent',\r\n  component: UserListComponent,\r\n  decorators: [\r\n    moduleMetadata({\r\n      imports: [CommonModule, MatIconModule, MatButtonModule, MatCardModule],\r\n    }),\r\n    componentWrapperDecorator(\r\n      (story) => `<div>${story}</div>`\r\n    ),\r\n  ],\r\n  render: (args: UserListComponent) => ({\r\n    props: {\r\n      ...args,\r\n    },\r\n  }),\r\n}"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/app/user-list/user-list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{\r\n  args: {\r\n    users: [\r\n      {id: 1, name: 'User1', role: 'admin'},\r\n      {id: 2, name: 'User2', role: 'admin'},\r\n    ],\r\n  },\r\n}"
                 }
             ],
             ".storybook/preview.ts": [
@@ -1598,19 +2202,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Preview",
-                    "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/i,\n      },\n    },\n  },\n}"
-                }
-            ],
-            "src/app/data/EquipmentСatalog.ts": [
-                {
-                    "name": "TREE_DATA",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/app/data/EquipmentСatalog.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "FoodNode[]",
-                    "defaultValue": "[\r\n    {\r\n      name: 'Экскаваторы',\r\n      children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    },\r\n    {\r\n        name: 'Бульдозеры'\r\n      },\r\n      {\r\n        name: 'Буровое оборудование',\r\n        children: [{name: 'Установки вертикального бурения'}, {name: 'Установки горизонтального бурения'}, {name: 'Бензорубы'}],\r\n      },\r\n      {\r\n        name: 'Погрузчики строительные',\r\n        children: [{name: 'Погрузчики фронтальные'}, {name: 'Погрузчики телескопические'}, {name: 'Мини-погрузчики'}, {name: 'Мини-погрузчики гусенечные'}],\r\n      },\r\n      {\r\n        name: 'Краны строительные',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Подъемники строительные',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Разная спецтехника',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n      {\r\n        name: 'Автомобили, грузоперевозки',\r\n        children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n      },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n    //   {\r\n    //     name: 'Погрузчики',\r\n    //     children: [{name: 'Гусенечные экскаватроры'}, {name: 'Колесные экскаватроры'}, {name: 'Экскаватроры-планировщики'}, {name: 'мини-экскаватроры'}, {name: 'Экскаватроры-погрузчики'}],\r\n    //   },\r\n  ]"
+                    "defaultValue": "{\r\n  parameters: {\r\n    actions: { argTypesRegex: \"^on[A-Z].*\" },\r\n    controls: {\r\n      matchers: {\r\n        color: /(background|color)$/i,\r\n        date: /Date$/i,\r\n      },\r\n    },\r\n  },\r\n}"
                 }
             ]
         },
@@ -1656,26 +2248,26 @@
                     "kind": 183
                 }
             ],
-            "src/app/all-category/all-category.stories.ts": [
+            "src/app/account-menu/account-menu.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<AllCategoryComponent>",
-                    "file": "src/app/all-category/all-category.stories.ts",
+                    "rawtype": "StoryObj<AccountMenuComponent>",
+                    "file": "src/app/account-menu/account-menu.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
                     "kind": 183
                 }
             ],
-            "src/app/category/category.stories.ts": [
+            "src/app/control-buttons/control-buttons.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<CategoryComponent>",
-                    "file": "src/app/category/category.stories.ts",
+                    "rawtype": "StoryObj<ControlButtonsComponent>",
+                    "file": "src/app/control-buttons/control-buttons.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1695,13 +2287,13 @@
                     "kind": 183
                 }
             ],
-            "src/app/ligth/ligth.stories.ts": [
+            "src/app/light/ligth.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<LigthComponent>",
-                    "file": "src/app/ligth/ligth.stories.ts",
+                    "rawtype": "StoryObj<LigthCopyComponent>",
+                    "file": "src/app/light/ligth.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1721,13 +2313,39 @@
                     "kind": 183
                 }
             ],
-            "src/app/search/search.stories.ts": [
+            "src/app/speed-control/speed-control.stories.ts": [
                 {
                     "name": "Story",
                     "ctype": "miscellaneous",
                     "subtype": "typealias",
-                    "rawtype": "StoryObj<SearchComponent>",
-                    "file": "src/app/search/search.stories.ts",
+                    "rawtype": "StoryObj<SpeedControlComponent>",
+                    "file": "src/app/speed-control/speed-control.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/app/usb-list/usb-list.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<UsbListComponent>",
+                    "file": "src/app/usb-list/usb-list.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 183
+                }
+            ],
+            "src/app/user-list/user-list.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<UserListComponent>",
+                    "file": "src/app/user-list/user-list.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -1738,7 +2356,7 @@
     },
     "routes": [],
     "coverage": {
-        "count": 2,
+        "count": 1,
         "status": "low",
         "files": [
             {
@@ -1752,16 +2370,16 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/all-category/all-category.component.ts",
+                "filePath": "src/app/account-menu/account-menu.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "AllCategoryComponent",
+                "name": "AccountMenuComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/7",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
-                "filePath": "src/app/all-category/all-category.stories.ts",
+                "filePath": "src/app/account-menu/account-menu.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1771,7 +2389,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/all-category/all-category.stories.ts",
+                "filePath": "src/app/account-menu/account-menu.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1786,7 +2404,7 @@
                 "linktype": "component",
                 "name": "AppComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/2",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
@@ -1820,16 +2438,16 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/category/category.component.ts",
+                "filePath": "src/app/control-buttons/control-buttons.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "CategoryComponent",
+                "name": "ControlButtonsComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/3",
                 "status": "low"
             },
             {
-                "filePath": "src/app/category/category.stories.ts",
+                "filePath": "src/app/control-buttons/control-buttons.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1839,7 +2457,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/category/category.stories.ts",
+                "filePath": "src/app/control-buttons/control-buttons.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1849,29 +2467,57 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/data/EquipmentСatalog.ts",
+                "filePath": "src/app/datal/config.reducer.ts",
                 "type": "interface",
                 "linktype": "interface",
-                "name": "ExampleFlatNode",
-                "coveragePercent": 25,
-                "coverageCount": "1/4",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/data/EquipmentСatalog.ts",
-                "type": "interface",
-                "linktype": "interface",
-                "name": "FoodNode",
+                "name": "ConfigPartialState",
                 "coveragePercent": 0,
-                "coverageCount": "0/3",
+                "coverageCount": "0/2",
                 "status": "low"
             },
             {
-                "filePath": "src/app/data/EquipmentСatalog.ts",
+                "filePath": "src/app/datal/config.reducer.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "ConfigState",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/datal/config.reducer.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IUsb",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/datal/config.reducer.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "IUser",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/datal/config.reducer.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "TREE_DATA",
+                "name": "CONFIG_FEATURE_KEY",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/datal/config.reducer.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "initialState",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -1906,16 +2552,16 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/ligth/ligth.component.ts",
+                "filePath": "src/app/light/ligth.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "LigthComponent",
+                "name": "LigthCopyComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
-                "filePath": "src/app/ligth/ligth.stories.ts",
+                "filePath": "src/app/light/ligth.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1925,7 +2571,7 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/ligth/ligth.stories.ts",
+                "filePath": "src/app/light/ligth.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1964,16 +2610,25 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/search/search.component.ts",
+                "filePath": "src/app/speed-control/speed-control.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "SearchComponent",
+                "name": "SpeedControlComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/1",
+                "coverageCount": "0/4",
                 "status": "low"
             },
             {
-                "filePath": "src/app/search/search.stories.ts",
+                "filePath": "src/app/speed-control/speed-control.component.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "SpeedControlComponentButton",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/speed-control/speed-control.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1983,7 +2638,65 @@
                 "status": "low"
             },
             {
-                "filePath": "src/app/search/search.stories.ts",
+                "filePath": "src/app/speed-control/speed-control.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/usb-list/usb-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "UsbListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/usb-list/usb-list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/usb-list/usb-list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/user-list/user-list.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "UserListComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/4",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/user-list/user-list.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/user-list/user-list.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

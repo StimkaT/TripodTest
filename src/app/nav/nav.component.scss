@@ -1,20 +1,12 @@
-.example-spacer {
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+
+  .example-spacer {
     flex: 1 1 auto;
   }
-.marg-tool {
-  margin-right: 10px;
-  border: none;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-  background-color: #4f64da;
-  color: white;
-  font-size: 16px;
-  margin-right: 10px;
-  padding: 10px;
-  border-radius: 5px;
 }
-.marg-tool:hover {
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-}
-.marg-logo {
-  margin-right: 10px;
+app-user-list {
+  width: 20px;
 }

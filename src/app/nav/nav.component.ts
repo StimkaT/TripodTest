@@ -4,15 +4,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { SearchComponent} from '../search/search.component';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
+import { UserListComponent } from '../user-list/user-list.component';
+import { AccountMenuComponent } from '../account-menu/account-menu.component';
 
 
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatFormFieldModule, SearchComponent, MatMenuModule],
+  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatFormFieldModule, MatMenuModule, UserListComponent, AccountMenuComponent],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.scss'
 })

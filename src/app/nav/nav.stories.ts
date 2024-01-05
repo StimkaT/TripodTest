@@ -5,14 +5,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { SearchComponent} from '../search/search.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 const meta: Meta<NavComponent> = {
   title: 'UI Components/NavComponent',
   component: NavComponent,
   decorators: [
     moduleMetadata({
-      imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatFormFieldModule, SearchComponent],
+      imports: [CommonModule, MatToolbarModule, MatButtonModule, MatIconModule, MatFormFieldModule, BrowserAnimationsModule],
     }),
     componentWrapperDecorator(
       (story) => `<div>${story}</div>`
